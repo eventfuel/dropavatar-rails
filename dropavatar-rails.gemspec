@@ -4,7 +4,7 @@ require "dropavatar-rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "dropavatar-rails"
-  s.version     = DropAvatarRails::VERSION
+  s.version     = Dropavatar::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Niko Roberts","Chris Coyier"]
   s.email       = ["niko@tasboa.com","chriscoyier@gmail.com"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files         = Dir.glob("{vendor,lib}/**/*")
   s.require_paths = ["lib"]
 
-  s.add_dependency "rails", "~> 3.2"
-  s.add_dependency "railties", "~> 3.2"
-  s.add_dependency "jquery-rails", "~> 2.2.0"
+  s.add_dependency "rails", ">= 3.2"
+  s.add_dependency "railties", ">= 3.1"
+  s.add_dependency "jquery-rails", ">= 2.2.0"
 end

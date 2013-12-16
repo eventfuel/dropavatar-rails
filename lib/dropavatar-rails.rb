@@ -1,3 +1,4 @@
+require 'dropavatar-rails/version'
 require 'dropavatar-rails/railtie'
 require 'dropavatar-rails/view_helpers'
 

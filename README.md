@@ -1,9 +1,12 @@
-# dropavatar-rails
+Overview
+============
 
-This gem aims to provide a way for images to be manipulated (resized and cropped) client side and then uploaded via XHR post request as base64 data.
+The dropavatar-rails gem aims to provide a way for images to be manipulated (resized and cropped) client side and then uploaded via XHR post request as base64 data.
 Primarily this is done to reduce load on a Rails server by centralling processing images with things like Carrierwave or Paperclip.
 
-## Usage
+
+Usage
+============
 
 ### Gem install
 
@@ -46,9 +49,40 @@ Adding an image with the class "dropavater-preview" will add an image next to th
     #...
 ```
 
-## Note on Patches/Pull Requests
+Compatibility
+============
+We test this gem in our project primarily using Chrome and Safari on Mac
+We use Ruby 1.9.3 and Rails 3.2
+Primarily we aim to use multi-browser compatible code but internally we don't test for complete compatibility (feel free to report bugs or make suggestions on improvements)
 
-- Fork the project.
-- Make your feature addition or bug fix
-- Commit
-- Send a pull request
+
+Contributing
+============
+If you want to contribute to the project please do:
+
+1. Fork the project
+2. Create a branch on your fork and make your changes
+3. Request a pull request with your changes
+
+*Any contributions to this project will be considered as licensed as MIT and the right to define the license for all contributed code as transferred to Niko Roberts*
+
+Authors
+============
+The primary author of this library is Niko Roberts, but it is also maintained by other developers within Tasboa.
+
+This project is part of a larger Tasboa project and it was built because we found uploading raw images through standard multipart forms was inefficient and the additional load on the server for cropping the images was an inefficient use of the powers of the web.
+
+
+Versioning
+============
+This library aims to adhere to [Semantic Versioning 2.0.0][semver]. Violations
+of this scheme should be reported as bugs. Specifically, if a minor or patch
+version is released that breaks backward compatibility, that version should be
+immediately yanked and/or a new version should be immediately released that
+restores compatibility. Breaking changes to the public API will only be
+introduced with new major versions. As a result of this policy, you can (and
+should) specify a dependency on this gem using the [Pessimistic Version
+Constraint][pvc] with two digits of precision. For example:
+
+    'dropavatar-rails', '~> 1.0'
+[semver]: http://semver.org/

@@ -1,5 +1,4 @@
-
-body.droppable .profile-avatar-wrap {
+.profile-avatar-wrap {
   border: 5px dashed lightblue;
   z-index: 9999;
 }
